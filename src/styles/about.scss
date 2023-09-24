@@ -1,0 +1,95 @@
+.about {
+  background-image: url('../images/about_back.jpg');
+  padding: 80px 24px;
+  color: white;
+
+  &__info {
+    padding-left: 56px;
+    max-width: 322px;
+    margin-bottom: 60px;
+    &__title {
+      font-size: 48px;
+
+      font-weight: 700px;
+      margin-bottom: 36px;
+      background: linear-gradient(#1BB147 0%, #018ED5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &__text {
+      font-size: 21px;
+      max-width: 778px;
+    }
+  }
+  
+  &__link {
+      &__container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 36px;
+      }
+    padding: 16px 40px;
+    text-transform: uppercase;
+    background-color: red;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+  }
+  &__details {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+  }
+
+  @media screen and (600px < width <= 1000px) {
+    .about {
+      &__info {
+
+        &__title {
+          font-size: 32px;
+        }
+
+        &__text {
+          font-size: 14px;
+        }
+      }
+
+      &__link {
+        font-size: 14px;
+      }
+
+      &__details {
+        font-size: 10px;
+        
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .about {
+      padding: 40px 14px;
+      &__info {
+        padding-left: 16px;
+        &__title {
+          font-size: 18px;
+        }
+
+        &__text {
+          font-size: 12px;
+        }
+      }
+
+      &__link {
+        font-size: 12px;
+      }
+
+      &__details {
+        font-size: 8px;
+        
+      }
+    }
+  }

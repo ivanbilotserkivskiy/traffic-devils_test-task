@@ -1,0 +1,88 @@
+.footer {
+  padding: 20px 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  &__icons {
+    margin-top: 10px;
+    display: flex;
+    &__icon {
+      width: 32px;
+      height: 32px;
+      background-size: contain;
+      &--1 {
+        background-image: url('../images/linkedin.png');
+      }
+      &--2 {
+        background-image: url('../images/twitter.png');
+      }
+    }
+  }
+  &__nav__list {
+    margin-top: 10px;
+    display: flex;
+    color: rgb(0, 150, 220);
+    justify-content: space-around;
+  }
+  &__nav__item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.contacts {
+  &__address {
+    margin-bottom: 20px;
+  }
+  &__phone {
+    margin-top: 20px;
+    color: gray;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .footer {
+    font-size: 12px;
+  }
+  .contacts {
+    &__address {
+      margin-bottom: 10px;
+    }
+    &__phone {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 8px;
+    &__nav__item:not(:last-child) {
+      margin-right: 5px;
+    }
+    &__icons {
+      margin-top: 10px;
+      display: flex;
+      &__icon {
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+        &--1 {
+          background-image: url('../images/linkedin.png');
+        }
+        &--2 {
+          background-image: url('../images/twitter.png');
+        }
+      }
+    }
+  }
+  .contacts {
+    &__address {
+      margin-bottom: 10px;
+    }
+    &__phone {
+      margin-top: 10px;
+    }
+  }
+}

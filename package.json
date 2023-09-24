@@ -1,0 +1,21 @@
+{
+  "source": "src/index.html",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "cdn": "^1.1.1",
+    "country-codes-list": "^1.6.11",
+    "custom-select": "^1.1.15",
+    "jquery": "^3.7.1",
+    "parcel-bundler": "^1.12.5",
+    "range-slider-input": "^2.4.4",
+    "rangetouch": "^2.0.1",
+    "sass": "^1.68.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3"
+  }
+}

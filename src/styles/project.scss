@@ -1,0 +1,121 @@
+.project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  &__info {
+    flex-direction: column;
+  }
+  &__person {
+    z-index: 100;
+    display: flex;
+    align-items: end;
+    &__img {
+      z-index: 100;
+      height: 677px;
+    }
+  }
+  &__details {
+    z-index: 1;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+    margin-bottom: 74px;
+    &__title {
+      font-size: 48px;
+      font-weight: 700;
+      background: linear-gradient(#1BB147 0%, #018ED5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 36px;
+    }
+    &__info {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 5px;
+      font-size: 20px;
+      &--bold {
+        margin-top: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+  &__owner {
+    width: auto;
+    color: #fff;
+    z-index: 0;
+    font-size: 22px;
+    margin-left: -200px;
+    padding: 24px 30px 24px 180px;
+    background: linear-gradient(90deg, #1BB147 0%, #018ED5 100%);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (600px < width <= 1000px) {
+  .project {
+    &__person {
+      
+      &__img {
+        height: 500px;
+      }
+    }
+    &__details {  
+      padding-top: 22px;
+      margin-bottom: 36px;
+      &__title {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+      &__info {
+        margin-bottom: 5px;
+        font-size: 14px;
+        &--bold {
+          margin-top: 15px;
+        }
+      }
+    }
+    &__owner {
+      font-size: 14px;
+      margin-left: -100px;
+      padding: 24px 20px 24px 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project {
+    padding: 10px 10px 0 10px;
+    grid-template-columns: repeat(1, 1fr);
+    &__person {
+      visibility: hidden;
+      width: 0px;
+      height: 0;
+      &__img {
+        height: 300px;
+      }
+    }
+    &__details {  
+      padding-top: 12px;
+      margin-bottom: 6px;
+      &__title {
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+      &__info {
+        margin-bottom: 5px;
+        font-size: 12px;
+        &--bold {
+          margin-top: 5px;
+        }
+      }
+    }
+    &__owner {
+      margin: 0;
+      width: 100%;
+      margin-left: -12px;
+      font-size: 12px;
+      padding: 14px 10px 14px 10px;
+    }
+  }
+}

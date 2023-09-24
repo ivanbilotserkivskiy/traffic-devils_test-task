@@ -1,0 +1,35 @@
+.header {
+  &__top {
+    padding: 41px 0 41px 27px;
+    background-image: url('../images/header_back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 400;
+    }
+  }
+
+}
+
+@media screen and (600px < width <= 1000px) {
+  .header {
+    &__top {
+      &__title {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    &__top {
+      &__title {
+        font-size: 14px;
+      }
+    }
+  }
+}

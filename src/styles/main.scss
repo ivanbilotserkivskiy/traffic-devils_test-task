@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  src: url('../fonts/Verdana.ttf')  format('truetype');
+}
+@font-face {
+  font-family: VerdanaItalic;
+  src: url('../fonts/Verdana-Italic.ttf');
+}
+body {
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main__content {
+  padding: 70px 66px 80px 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@import url('https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
+@import './header.scss';
+@import './navigation.scss';
+@import './form.scss';
+@import './info.scss';
+@import './project.scss';
+@import './about.scss';
+@import './advantages.scss';
+@import './footer.scss';
+@import './slider.scss';
+@import './cards.scss';
